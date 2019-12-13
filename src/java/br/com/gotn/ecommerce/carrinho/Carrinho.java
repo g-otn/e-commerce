@@ -37,7 +37,7 @@ public class Carrinho {
         }
     }
 
-    public double calcularTotal() {
+    public double getTotal() {
         double total = 0;
         for (int i = 0; i < itens.size(); i++) {
             total += itens.get(i).getQuantidade() * itens.get(i).getProduto().getPreco();
