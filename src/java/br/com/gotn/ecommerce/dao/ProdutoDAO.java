@@ -4,6 +4,7 @@ import br.com.gotn.ecommerce.dominio.Produto;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.UUID;
 
 public interface ProdutoDAO {
     
@@ -18,5 +19,7 @@ public interface ProdutoDAO {
     Long inserir(Produto premio) throws ClassNotFoundException, SQLException;
 
     public List<Produto> listarTodos() throws ClassNotFoundException, SQLException;
+    
+    public UUID consultarImagem(Long id) throws ClassNotFoundException, SQLException;
     
 }

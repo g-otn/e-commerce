@@ -1,5 +1,6 @@
 package br.com.gotn.ecommerce.dominio;
 
+import java.util.UUID;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -17,5 +18,7 @@ public class Produto {
     
     private String nome;
     private String descricao;
+    private double preco;
+    private UUID hashImagem;
     
 }
